@@ -3,242 +3,141 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mohammath Hannan | Network & Cloud Security</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-
+<title>Mohammath Hannan | Network Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-* {
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  scroll-behavior: smooth;
+:root{
+  --bg:#f8fafc; --text:#0f172a; --primary:#2563eb; --card:#ffffff;
 }
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
-}
-nav {
-  display:flex;
-  justify-content:center;
-  gap:30px;
-  padding:20px;
-  background:#fff;
-  box-shadow:0 2px 5px rgba(0,0,0,0.1);
-  position:sticky;
-  top:0;
-  z-index:100;
-}
-nav a {
-  text-decoration:none;
-  color:#333;
-  font-weight:600;
-  transition:0.3s;
-}
-nav a:hover {
-  color:#8b3eff;
-}
-.header {
-  position:relative;
-  background:#1e1e3f;
-  height:350px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  flex-direction:column;
-}
-.header::after {
-  content:'';
-  position:absolute;
-  bottom:-1px;
-  width:100%;
-  height:100px;
-  background:white;
-  border-radius:50% 50% 0 0;
-}
-.header img {
-  width:150px;
-  height:150px;
-  border-radius:50%;
-  border:4px solid #fff;
-  object-fit:cover;
-  z-index:1;
-  margin-bottom:15px;
-}
-.header h1 {
-  color:#fff;
-  margin-bottom:5px;
-}
-.header p {
-  color:#ddd;
-  margin-bottom:10px;
-}
-.socials {
-  display:flex;
-  gap:15px;
-}
-.socials a {
-  color:#fff;
-  font-size:1.3rem;
-  transition:0.3s;
-}
-.socials a:hover {
-  color:#8b3eff;
-}
-
-/* Sections */
-.container {
-  width:90%;
-  max-width:1000px;
-  margin:auto;
-  padding:40px 0;
-}
-section {
-  margin-bottom:60px;
-}
-h2 {
-  text-align:center;
-  color:#1e1e3f;
-  margin-bottom:30px;
-}
-.skills-grid, .projects-grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:20px;
-}
-.card {
-  background:#fff;
-  padding:20px;
-  border-radius:12px;
-  box-shadow:0 2px 10px rgba(0,0,0,0.1);
-  transition:transform 0.3s;
-}
-.card:hover {
-  transform:translateY(-5px);
-}
-.card img {
-  width:100%;
-  border-radius:10px;
-  margin-top:10px;
-}
-.contact p, .contact a {
-  text-align:center;
-  margin:10px 0;
-  color:#333;
-  text-decoration:none;
-}
-.contact a:hover {
-  color:#8b3eff;
-}
-footer {
-  text-align:center;
-  padding:30px;
-  color:#777;
-}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter;line-height:1.6}
+header{padding:20px 60px;display:flex;justify-content:space-between;align-items:center;background:#fff;border-bottom:1px solid #e2e8f0;position:sticky;top:0}
+header h1{color:var(--primary);font-size:20px}
+nav a{margin-left:25px;color:#334155;text-decoration:none;font-weight:500}
+nav a:hover{color:var(--primary)}
+section{padding:70px 60px}
+h2{color:var(--primary);margin-bottom:20px}
+.card{background:var(--card);border:1px solid #e2e8f0;padding:25px;border-radius:12px;margin-bottom:20px;transition:0.3s}
+.card:hover{box-shadow:0 10px 30px rgba(0,0,0,0.08)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.hero{padding:100px 60px;background:#eef2ff}
+.hero h1{font-size:38px;margin-bottom:10px}
+.hero p{color:#475569}
+.btn{display:inline-block;margin-top:15px;padding:10px 18px;background:var(--primary);color:#fff;border-radius:8px;text-decoration:none}
+table{width:100%;border-collapse:collapse;margin-top:10px}
+td,th{border:1px solid #e2e8f0;padding:10px;text-align:left}
+img{width:100%;border-radius:10px;margin-top:15px}
+.hidden{display:none}
+button{padding:8px 14px;border:none;background:var(--primary);color:#fff;border-radius:6px;margin-top:10px;cursor:pointer}
 </style>
-
-<!-- Font Awesome for social icons -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
+<script>
+function toggle(id){document.getElementById(id).classList.toggle('hidden');}
+</script>
 </head>
 <body>
 
+<header>
+<h1>Mohammath Hannan</h1>
 <nav>
-  <a href="#expertise">Expertise</a>
-  <a href="#history">History</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
 </nav>
+</header>
 
-<!-- Header -->
-<div class="header">
-  <img src="images/profile.jpg" alt="Mohammath Hannan">
-  <h1>Mohammath Hannan</h1>
-  <p>Network & Cloud Security</p>
-  <div class="socials">
-    <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-  </div>
-</div>
+<section class="hero">
+<h1>Network Engineer</h1>
+<p>Designing scalable, secure enterprise networks using real-world simulation and architecture planning.</p>
+<a href="#projects" class="btn">View Projects</a>
+</section>
 
-<div class="container">
-
-<!-- Expertise -->
-<section id="expertise">
-<h2>Expertise</h2>
-<div class="skills-grid">
-  <div class="card">
-    <h3>Networking</h3>
-    <ul>
-      <li>IPv4/IPv6 Subnetting</li>
-      <li>Routing & Switching</li>
-      <li>VLAN Configuration</li>
-      <li>NAT & DHCP</li>
-    </ul>
-  </div>
-  <div class="card">
-    <h3>Security</h3>
-    <ul>
-      <li>Firewall Rules</li>
-      <li>VPN Fundamentals</li>
-      <li>Packet Analysis</li>
-      <li>IDS/IPS Basics</li>
-    </ul>
-  </div>
-  <div class="card">
-    <h3>Tools</h3>
-    <ul>
-      <li>Cisco Packet Tracer</li>
-      <li>Wireshark</li>
-      <li>VirtualBox</li>
-      <li>Linux</li>
-    </ul>
-  </div>
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+<p>I specialize in enterprise network design with a focus on segmentation, routing, and security. My work is built using Cisco Packet Tracer, applying real-world engineering principles such as OSPF routing, VLAN architecture, and subnet optimization.</p>
 </div>
 </section>
 
-<!-- History -->
-<section id="history">
-<h2>History</h2>
-<p style="text-align:center;">HND in Computing – Network Engineering | BEng (Hons) Network & Cloud Security – In Progress | CCNA – In Progress</p>
+<section id="skills">
+<h2>Core Skills</h2>
+<div class="grid">
+<div class="card">LAN/WAN Architecture</div>
+<div class="card">VLSM & Subnet Design</div>
+<div class="card">VLAN & Inter-VLAN Routing</div>
+<div class="card">OSPF Routing</div>
+<div class="card">Firewall & ACL Design</div>
+<div class="card">Cisco Packet Tracer</div>
+</div>
 </section>
 
-<!-- Projects -->
 <section id="projects">
-<h2>Projects</h2>
-<div class="projects-grid">
-  <div class="card">
-    <h3>Firewall Lab</h3>
-    <img src="images/firewall_lab.png" alt="Firewall Lab Screenshot">
-    <p>Implemented firewall rules and NAT policies in a virtual lab.</p>
-  </div>
-  <div class="card">
-    <h3>Packet Analysis Lab</h3>
-    <img src="images/packet_analysis.png" alt="Packet Analysis Screenshot">
-    <p>Captured and analyzed network traffic using Wireshark.</p>
-  </div>
-  <div class="card">
-    <h3>Enterprise Network Design</h3>
-    <img src="images/network_lab.png" alt="Network Lab Screenshot">
-    <p>Designed VLAN segmentation and routing for a simulated enterprise network.</p>
-  </div>
+<h2>Enterprise Network Project (ITS)</h2>
+<div class="card">
+
+<h3>Overview</h3>
+<p>Designed and simulated a centralized enterprise network replacing multiple distributed training centers. Focused on scalability, segmentation, and secure access control.</p>
+
+<h3>Technical Highlights</h3>
+<ul>
+<li>Layer 3 switching with OSPF dynamic routing</li>
+<li>VLAN segmentation across departments</li>
+<li>Optimized IP allocation using VLSM</li>
+<li>Firewall rules enforcing strict access control</li>
+</ul>
+
+<button onclick="toggle('ip')">View IP Plan</button>
+<div id="ip" class="hidden">
+<table>
+<tr><th>Network</th><th>Subnet</th><th>Purpose</th></tr>
+<tr><td>Trainer</td><td>192.168.10.0/23</td><td>Training rooms</td></tr>
+<tr><td>Guest</td><td>192.168.20.0/22</td><td>Public users</td></tr>
+<tr><td>Business</td><td>192.168.30.0/24</td><td>Staff</td></tr>
+<tr><td>Tech</td><td>192.168.40.0/26</td><td>Admins</td></tr>
+<tr><td>Dev</td><td>192.168.50.0/25</td><td>Developers</td></tr>
+</table>
+</div>
+
+<button onclick="toggle('sec')">View Security Design</button>
+<div id="sec" class="hidden">
+<ul>
+<li>Guest network isolated (Internet only)</li>
+<li>Trainer network limited to internal services</li>
+<li>Tech network full administrative access</li>
+<li>ACL rules restrict inter-VLAN communication</li>
+</ul>
+</div>
+
+<h3>Network Diagrams</h3>
+<img src="network1.png" alt="Network Design">
+<img src="network2.png" alt="Topology">
+
+<h3>Configuration Sample</h3>
+<div class="card">
+<pre>
+router ospf 1
+ network 192.168.0.0 0.0.255.255 area 0
+
+interface vlan 10
+ ip address 192.168.10.1 255.255.254.0
+ no shutdown
+</pre>
+</div>
+
 </div>
 </section>
 
-<!-- Contact -->
 <section id="contact">
 <h2>Contact</h2>
-<div class="contact">
-  <p>Email: your@email.com</p>
-  <p><a href="files/Mohammath_Hannan_Resume.pdf" download>📄 Download Resume</a></p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+<div class="card">
+<p>Email: your@email.com</p>
+<p>LinkedIn: your-linkedin-url</p>
+<p>GitHub: your-github-url</p>
+<a href="resume.pdf" class="btn">Download Resume</a>
 </div>
 </section>
 
-</div>
-
-<footer>
-© 2026 Mohammath Hannan | Portfolio
+<footer style="text-align:center;padding:20px;border-top:1px solid #e2e8f0">
+<p>© 2026 Mohammath Hannan</p>
 </footer>
 
 </body>
