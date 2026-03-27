@@ -59,19 +59,26 @@ function toggle(id){document.getElementById(id).classList.toggle('hidden');}
 </section>
 
 <section id="skills">
-<h2>Core Skills</h2>
+<h2>SKILLS</h2>
+<h3>TECHNICAL SKILLS</h3>
 <div class="grid">
-<div class="card">LAN/WAN Architecture</div>
-<div class="card">VLSM & Subnet Design</div>
+<div class="card">TCP/IP Networking</div>
+<div class="card">IP Addressing and Subnetting</div>
 <div class="card">VLAN & Inter-VLAN Routing</div>
 <div class="card">OSPF Routing</div>
-<div class="card">Firewall & ACL Design</div>
-<div class="card">Cisco Packet Tracer</div>
+<div class="card">Firewall & ACL Configuration</div>
 </div>
+<h3>SOFT SKILLS</h3>
+<div class = "grid">
+<div class = "card">Excellent Communication</div>
+<div class = "card">Team Collaboration</div>
+<div class = "card">Adaptabiity</div>
+<div class = "card">Problem Solving</div>
 </section>
 
 <section id="projects">
-<h2>Enterprise Network Project (ITS)</h2>
+<h2>Projects</h2>
+<h3>Enterprise Network Project (ITS)</h3>
 <div class="card">
 
 <h3>Overview</h3>
@@ -87,13 +94,26 @@ function toggle(id){document.getElementById(id).classList.toggle('hidden');}
 
 <button onclick="toggle('ip')">View IP Plan</button>
 <div id="ip" class="hidden">
+<h2>ITS HEAD OFFICE</h2>
+<h3>ITS Trainer</h3>
 <table>
-<tr><th>Network</th><th>Subnet</th><th>Purpose</th></tr>
-<tr><td>Trainer</td><td>192.168.10.0/23</td><td>Training rooms</td></tr>
-<tr><td>Guest</td><td>192.168.20.0/22</td><td>Public users</td></tr>
-<tr><td>Business</td><td>192.168.30.0/24</td><td>Staff</td></tr>
-<tr><td>Tech</td><td>192.168.40.0/26</td><td>Admins</td></tr>
-<tr><td>Dev</td><td>192.168.50.0/25</td><td>Developers</td></tr>
+<tr><th>Network ID</th><th>First IP</th><th>Last IP</th><th>Broadcast ID</th><th>Subnet Mask</th><th>VLAN Name</th><th>VLAN ID</th></tr>
+<tr><td>192.168.10.0</td><td>192.168.10.1</td><td>192.168.10.30</td><td>192.168.10.31</td><td>255.255.255.224</td><td>ITS Trainer Room 01</td><td>10</td></tr>
+<tr><td>192.168.10.32</td><td>192.168.10.33</td><td>192.168.10.62</td><td>192.168.10.63</td><td>255.255.255.224</td><td>ITS Trainer Room 02</td><td>20</td></tr>
+<tr><td>192.168.10.64</td><td>192.168.10.65</td><td>192.168.10.94</td><td>192.168.10.95</td><td>255.255.255.224</td><td>ITS Trainer Room 03</td><td>30</td></tr>
+<tr><td>192.168.10.96</td><td>192.168.10.97</td><td>192.168.10.126</td><td>192.168.10.127</td><td>255.255.255.224</td><td>ITS Trainer Room 04</td><td>40</td></tr>
+<tr><td>192.168.10.128</td><td>192.168.10.129</td><td>192.168.10.158</td><td>192.168.10.159</td><td>255.255.255.224</td><td>ITS Trainer Room 05</td><td>50</td></tr>
+<tr><td>192.168.10.160</td><td>192.168.10.161</td><td>192.168.10.190</td><td>192.168.10.191</td><td>255.255.255.224</td><td>ITS Trainer Room 06</td><td>60</td></tr>
+<tr><td>192.168.10.192</td><td>192.168.10.193</td><td>192.168.10.222</td><td>192.168.10.223</td><td>255.255.255.224</td><td>ITS Trainer Room 07</td><td>70</td></tr>
+<tr><td>192.168.10.224</td><td>192.168.10.225</td><td>192.168.10.254</td><td>192.168.10.255</td><td>255.255.255.224</td><td>ITS Trainer Room 08</td><td>80</td></tr>
+<tr><td>192.168.12.0</td><td>192.168.12.1</td><td>192.168.12.30</td><td>192.168.12.31</td><td>255.255.255.224</td><td>ITS Trainer Room 09</td><td>90</td></tr>
+<tr><td>192.168.12.32</td><td>192.168.12.33</td><td>192.168.12.62</td><td>192.168.12.63</td><td>255.255.255.224</td><td>ITS Trainer Room 10</td><td>100</td></tr>
+<tr><td>192.168.12.64</td><td>192.168.12.65</td><td>192.168.12.94</td><td>192.168.12.95</td><td>255.255.255.224</td><td>ITS Trainer Room 11</td><td>110</td></tr>
+<tr><td>192.168.12.96</td><td>192.168.12.97</td><td>192.168.12.126</td><td>192.168.12.127</td><td>255.255.255.224</td><td>ITS Trainer Room 12</td><td>120</td></tr>
+<tr><td>192.168.12.128</td><td>192.168.12.129</td><td>192.168.12.158</td><td>192.168.12.159</td><td>255.255.255.224</td><td>ITS Trainer Room 13</td><td>130</td></tr>
+<tr><td>192.168.12.160</td><td>192.168.12.161</td><td>192.168.12.190</td><td>192.168.12.191</td><td>255.255.255.224</td><td>ITS Trainer Room 14</td><td>140</td></tr>
+<tr><td>192.168.12.192</td><td>192.168.12.193</td><td>192.168.12.222</td><td>192.168.12.223</td><td>255.255.255.224</td><td>ITS Trainer Room 15</td><td>150</td></tr>
+
 </table>
 </div>
 
